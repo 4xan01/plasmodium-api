@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detector de plasmodium vivax en sangre</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🧫Detector de plasmodium vivax en sangre</h1>
+        <p>Sube una imagen de muestra para analizarla con inteligencia artificial.</p>
+
+       <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <input type="submit" value="Analizar">
+        </form>
+
+        {% if filename %}
+        <div class="result">
+            <h2>Resultado</h2>
+            <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Imagen cargada">
+            <p class="prediction">{{ result }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
