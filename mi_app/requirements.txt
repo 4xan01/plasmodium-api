@@ -4,6 +4,5 @@ flask~=3.1.0
 tensorflow~=2.17.0-rc1
 werkzeug~=3.1.3
 biopython~=1.78
-pyqt6-sip~=13.9.1
 pillow~=11.1.0
 matplotlib~=3.10.0
