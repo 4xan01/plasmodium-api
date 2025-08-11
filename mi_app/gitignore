@@ -1,0 +1,17 @@
+# Ignorar entorno virtual
+venv/
+
+# Ignorar carpetas temporales de Python
+__pycache__/
+*.pyc
+
+# Ignorar modelos grandes
+*.h5
+*.hdf5
+
+# Ignorar configuraciones privadas
+.env
+
+# Ignorar archivos de sistema (Windows/Mac)
+.DS_Store
+Thumbs.db
